@@ -1,0 +1,26 @@
+.container {
+  max-width: 960px;
+  height: 100vw;
+  margin: 20px auto 0;
+  background-color: #80808021;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  max-width: 100%;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.col+.col {
+  border-left: 1px solid gray;
+}
+
