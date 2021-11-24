@@ -1,4 +1,5 @@
-import {REQUEST_PERSON, SHOW_LOADER, HIDE_LOADER, CREATE_PERSON, SHOW_ALERT, HIDE_ALERT, ACTIVE, NOT_ACTIVE} from "./types";
+import {REQUEST_PERSON, SHOW_LOADER, HIDE_LOADER, CREATE_PERSON,
+  SHOW_ALERT, HIDE_ALERT, ACTIVE, NOT_ACTIVE} from "./types";
 
 export function fetchPersons() {
   return {
@@ -6,12 +7,12 @@ export function fetchPersons() {
   }
 }
 
-export function createPerson(person) {
-  return {
-    type: CREATE_PERSON,
-    payload: person,
-  }
-}
+// export function createPerson(person) {
+//   return {
+//     type: CREATE_PERSON,
+//     payload: person,
+//   }
+// }
 
 export function showLoader() {
   return {

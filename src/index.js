@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 import createSagaMiddleware from 'redux-saga'
 import {rootReducer} from "./redux/rootReducer";
-import App from './App';
+import App from './component/App';
 import * as serviceWorker from './serviceWorker';
 import {sagaWatcher} from "./redux/sagas";
 
@@ -20,11 +20,6 @@ const store = createStore(
 
 saga.run(sagaWatcher)
 
-// const app = (
-//   <Provider store={store}>
-//     <App/>
-//   </Provider>
-// )
 ReactDOM.render(
   <Provider store={store}>
     <App />

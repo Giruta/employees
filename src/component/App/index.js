@@ -1,12 +1,10 @@
 import React from 'react';
-// import s from './style.css';
 import { StyledContainer, StyledRow, StyledCol } from './style.js';
-import ListOfPersons from "./component/ListOfPersons/ListOfPersons";
-// import Person from "./component/Person";
+import ListOfPersons from "../ListOfPersons";
+// import Person from "./Person";
 
-function App() {
+function Index() {
   return (
-    // <div className={s.container}>
     <StyledContainer>
       <StyledRow>
         <StyledCol>
@@ -24,9 +22,9 @@ function App() {
   );
 }
 
-export default App;
+export default Index;
 
-//export default function App;
+//export default function Index;
 //
 // const API_URL = 'https://yalantis-react-school-api.yalantis.com/api/task0/users';
 // const rootElement = document.getElementById('root');
@@ -54,4 +52,4 @@ export default App;
 //    rootElement.innerText = 'Failed to load data';
 //  });
 //
-// // export default App;
+// // export default Index;

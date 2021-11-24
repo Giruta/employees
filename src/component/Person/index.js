@@ -8,12 +8,13 @@ const handleChange = (e) => {
 
 }
 
-export default ({ person }) => {
+const Person = ({ person }) => {
+  console.log('person = ', person);
   const dispatch = useDispatch();
   const active = useSelector(state => state.app.active)
   return (
     <StyledCard className='styledCard'>
-      <h3 className='card-title'>person.name</h3>
+      <h3 className='card-title'>{person.firstName + ' ' + person.lastName}</h3>
       <form className='form'>
           <input 
             type="radio"
@@ -37,3 +38,4 @@ export default ({ person }) => {
     </StyledCard>
   )
 }
+export default Person;
